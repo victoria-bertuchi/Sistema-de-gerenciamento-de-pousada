@@ -1,63 +1,106 @@
 import { StyleSheet } from 'react-native';
 
+const colors = {
+  colorBg: '#E0CFDE',
+  textColor: '#000000',
+  inputBg: '#FFFFFF',
+  buttonBg: '#4C4799',
+  buttonTextColor: '#E0CFDE',
+  colorIcon: '#333333'
+};
+
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#FFFF',
+        backgroundColor: colors.colorBg
     },
 
-    labelTitle:{
-        width: '100%', // Garante que o container do título ocupe a largura toda
-        alignItems: 'center', // Centraliza o que estiver dentro dele (o Text)
-        marginTop: 20,
-        marginBottom: 20,
+    /* Cabeçalho */
+    labelTitle: {
+        width: '100%',
+        alignItems: 'center',
+        marginTop: 50,
+        marginBottom: 25
     },
 
     title: {
-        fontSize:35,
-        width:185,
+        fontSize: 40,
+        width: 190,
         textAlign: 'center',
+        fontFamily: 'LeagueSpartan-Regular'
     },
-    
+
+    /* Formulário */
     form: {
-        marginTop: 30
+        marginTop: 15
     },
 
     inputGroup: {
-        width: '100%',
-        marginBottom: 40,
-        marginLeft:10
+        alignItems: 'center',
+        marginBottom: 30
+    },
+
+    inputWrapper: {
+        width: 290
     },
 
     textForm: {
-        fontSize: 18,
-        color: '#333',
+        fontSize: 21,
+        color: colors.textColor,
+        fontFamily: 'LeagueSpartan-Regular',
+        marginBottom: 5
     },
 
     input: {
-        width: 300,
-        height: 35,
-        borderWidth: 1,
+        width: 290,
+        height: 40,
+        paddingHorizontal: 16,
+        borderRadius: 18,
+        backgroundColor: colors.inputBg,
+        fontSize: 18,
+        fontFamily: 'LeagueSpartan-Regular'
+    },
+
+    inputContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: colors.inputBg,
+        width: 290,
+        height: 40,
+        borderRadius: 18,
         paddingHorizontal: 16
     },
 
-    footer:{
+    inputWithIcon: {
+        flex: 1,
+        height: '100%',
+        fontSize: 18,
+        fontFamily: 'LeagueSpartan-Regular',
+        color: colors.colorIcon
+    },
+
+    eyeIcon: {
+        padding: 4
+    },
+
+    footer: {
         marginBottom: 10,
         alignItems: 'center'
     },
 
-    button:{
-        backgroundColor: '#4C4799',
-        width: 160,
+    /* Botão salvar */
+    button: {
+        backgroundColor: colors.buttonBg,
+        width: 200,
         height: 45,
-        borderRadius: 10,
+        borderRadius: 40,
         alignItems: 'center',
         justifyContent: 'center'
     },
 
-    buttonText:{
+    buttonText: {
         fontSize: 20,
-        color: '#FFFF'
-    }
-
+        color: colors.buttonTextColor,
+        fontFamily: 'LeagueSpartan-Regular',
+    },
 });
