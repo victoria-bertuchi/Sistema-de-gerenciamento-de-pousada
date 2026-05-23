@@ -92,7 +92,7 @@ export default function Cadastro() {
       </View>
 
       <View style={styles.footer}>
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/telaInicial')}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push('/telaFuncionarios')}>
           <Text style={styles.buttonText}>Salvar</Text>
         </TouchableOpacity>
       </View>

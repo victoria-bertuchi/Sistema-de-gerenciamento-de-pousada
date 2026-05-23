@@ -29,6 +29,9 @@ export default function Layout() {
       <Stack.Screen name="index"/>
       <Stack.Screen name="telaCadastro"/>
       <Stack.Screen name="telaInicial"/>
+      <Stack.Screen name="telaFuncionarios"/>
+      <Stack.Screen name="telaCronograma"/>
+      <Stack.Screen name="telaPerfil"/>
     </Stack>
   );
 }
