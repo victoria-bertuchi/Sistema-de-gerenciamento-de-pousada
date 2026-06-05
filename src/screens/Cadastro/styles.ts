@@ -1,18 +1,19 @@
 import { StyleSheet } from 'react-native';
 
 const colors = {
-  colorBg: '#E0CFDE',
-  textColor: '#000000',
-  inputBg: '#FFFFFF',
-  buttonBg: '#4C4799',
-  buttonTextColor: '#E0CFDE',
-  colorIcon: '#333333'
+  roxo: '#4C4799', 
+  bege: '#F3F1E4', 
+  branco: '#FFFFFF',
+  preto: '#000000',
+  lilas: '#827CB9',
+  azul: '#BCD7FF',
+  rosa: '#E0CFDE'
 };
 
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: colors.colorBg
+        backgroundColor: colors.rosa
     },
 
     /* Cabeçalho */
@@ -46,7 +47,7 @@ export const styles = StyleSheet.create({
 
     textForm: {
         fontSize: 21,
-        color: colors.textColor,
+        color: colors.preto,
         fontFamily: 'LeagueSpartan-Regular',
         marginBottom: 5
     },
@@ -56,7 +57,7 @@ export const styles = StyleSheet.create({
         height: 40,
         paddingHorizontal: 16,
         borderRadius: 18,
-        backgroundColor: colors.inputBg,
+        backgroundColor: colors.branco,
         fontSize: 18,
         fontFamily: 'LeagueSpartan-Regular'
     },
@@ -64,7 +65,7 @@ export const styles = StyleSheet.create({
     inputContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: colors.inputBg,
+        backgroundColor: colors.branco,
         width: 290,
         height: 40,
         borderRadius: 18,
@@ -76,7 +77,7 @@ export const styles = StyleSheet.create({
         height: '100%',
         fontSize: 18,
         fontFamily: 'LeagueSpartan-Regular',
-        color: colors.colorIcon
+        color: colors.preto
     },
 
     eyeIcon: {
@@ -90,7 +91,7 @@ export const styles = StyleSheet.create({
 
     /* Botão salvar */
     button: {
-        backgroundColor: colors.buttonBg,
+        backgroundColor: colors.roxo,
         width: 200,
         height: 45,
         borderRadius: 40,
@@ -100,7 +101,7 @@ export const styles = StyleSheet.create({
 
     buttonText: {
         fontSize: 20,
-        color: colors.buttonTextColor,
+        color: colors.branco,
         fontFamily: 'LeagueSpartan-Regular',
     },
 });

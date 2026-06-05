@@ -1,25 +1,25 @@
 import { StyleSheet } from 'react-native';
 
 const colors = {
-  colorBg: '#F3F1E4',
-  headerFooter: '#4C4799',
-  button: '#867ABC',
-  buttonProfile: '#9BC1FA',
-  icon: '#000000',
-  textIcons: '#000000',
-  textTitle: '#F3F1E4'
+  roxo: '#4C4799', 
+  bege: '#F3F1E4', 
+  branco: '#FFFFFF',
+  preto: '#000000',
+  lilas: '#867ABC',
+  azul: '#BCD7FF',
+  rosa: '#E0CFDE'
 };
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1, 
-    backgroundColor: colors.colorBg, 
+    backgroundColor: colors.bege, 
     justifyContent: 'space-between', 
   },
 
   /* Header */
   headerContainerMenu: {
-    backgroundColor: colors.headerFooter,
+    backgroundColor: colors.roxo,
     width: '100%',
     height: '25%',              
     borderBottomLeftRadius: 40,  
@@ -37,13 +37,13 @@ export const styles = StyleSheet.create({
 
   titleTextMenu: {
     fontSize: 28,
-    color: colors.textTitle,
+    color: colors.bege,
     fontFamily: 'LeagueSpartan-Regular',
   },
 
   subTitleTextMenu: {
     fontSize: 32,
-    color: colors.textTitle,
+    color: colors.bege,
     fontFamily: 'LeagueSpartan-Regular',
     lineHeight: 36,
   },
@@ -77,7 +77,7 @@ export const styles = StyleSheet.create({
   },
 
   buttonMenu: {
-    backgroundColor: colors.button,
+    backgroundColor: colors.lilas,
     width: 100,
     height: 100,
     borderRadius: 20,
@@ -86,12 +86,12 @@ export const styles = StyleSheet.create({
   },
 
   buttonPerfil: {
-    backgroundColor: colors.buttonProfile, 
+    backgroundColor: colors.azul, 
   },
 
   menuItemText: {
     fontSize: 18,
-    color: colors.textIcons,
+    color: colors.preto,
     fontFamily: 'LeagueSpartan-Regular',
     marginTop: 8,
     textAlign: 'center',
@@ -99,7 +99,7 @@ export const styles = StyleSheet.create({
 
 
   footerSairContainer: {
-    backgroundColor: colors.headerFooter,
+    backgroundColor: colors.roxo,
     width: '100%',
     height: '10%',
     borderTopLeftRadius: 40,    
@@ -114,7 +114,7 @@ export const styles = StyleSheet.create({
 
   buttonSairText: {
     fontSize: 22,
-    color: colors.textTitle,
+    color: colors.bege,
     fontFamily: 'LeagueSpartan-Regular',
     textDecorationLine: 'underline',
   }

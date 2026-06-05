@@ -1,18 +1,19 @@
 import { StyleSheet } from 'react-native';
 
 const colors = {
-  colorBg: '#4C4799',
-  textLight: '#F3F1E4',
-  buttonBg: '#BCD7FF',
-  inputBg: '#FFFFFF',
-  inputText: '#333333',
-  inputPlaceholder: '#A0A0A0',
+  roxo: '#4C4799', 
+  bege: '#F3F1E4', 
+  branco: '#FFFFFF',
+  preto: '#000000',
+  lilas: '#827CB9',
+  azul: '#BCD7FF',
+  rosa: '#E0CFDE'
 };
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.colorBg,
+    backgroundColor: colors.roxo,
     padding: 24,
     justifyContent: 'center'
   },
@@ -34,7 +35,7 @@ export const styles = StyleSheet.create({
 
   titleText: {
     fontSize: 54,
-    color: colors.textLight,
+    color: colors.bege,
     fontFamily: 'LeagueSpartan-Regular',
     textAlign: 'left',
     lineHeight: 52
@@ -42,7 +43,7 @@ export const styles = StyleSheet.create({
 
   subTitleText: {
     fontSize: 24,
-    color: colors.textLight,
+    color: colors.bege,
     fontFamily: 'Krub-Regular',
     textAlign: 'left',
     lineHeight: 30,
@@ -75,7 +76,7 @@ export const styles = StyleSheet.create({
 
   text: {
     fontSize: 25,
-    color: colors.textLight,
+    color: colors.bege,
     paddingBottom: 5,
     fontFamily: 'LeagueSpartan-Regular'
   },
@@ -83,7 +84,7 @@ export const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: colors.inputBg,
+    backgroundColor: colors.bege,
     width: 300,
     height: 45,
     borderRadius: 20,
@@ -102,7 +103,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     height: '100%',
     fontSize: 18,
-    color: colors.inputText
+    color: colors.preto
   },
 
   footer: {
@@ -120,14 +121,14 @@ export const styles = StyleSheet.create({
 
   buttonEsqueciMinhaSenhaText: {
     fontSize: 20,
-    color: colors.textLight,
+    color: colors.branco,
     fontFamily: 'LeagueSpartan-Regular',
     textDecorationLine: 'underline'
   },
 
   /* Botão entrar*/
   button: {
-    backgroundColor: colors.buttonBg,
+    backgroundColor: colors.azul,
     width: 220,
     height: 45,
     borderRadius: 40,
@@ -137,7 +138,7 @@ export const styles = StyleSheet.create({
 
   buttonText: {
     fontSize: 20,
-    color: colors.colorBg,
+    color: colors.roxo,
     fontFamily: 'LeagueSpartan-Regular'
   }
 });
